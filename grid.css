@@ -1,0 +1,136 @@
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px; 
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+[class*='col-'] {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-xs-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.search {
+    display: flex;
+ }
+.search .type-buttom {
+    flex-direction: row;
+}
+@media(min-width:768px){
+    .container {
+        max-width: 720px;
+    }
+    .col-md-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-md-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .col-md-7 {
+        flex: 0 0 58.33334%;
+        max-width: 58.33334%;
+    }
+    .col-md-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+
+
+}
+@media(min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+    .col-md-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-md-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .col-md-7 {
+        flex: 0 0 58.33334%;
+        max-width: 58.33334%;
+    }
+    .col-md-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .square-text {
+        padding-top: 70px;
+    }
+
+}
+@media(min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    .col-md-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-md-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .col-md-7 {
+        flex: 0 0 61.33334%;
+        max-width: 61.33334%;
+    }
+    .col-md-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .square-text {
+        padding-top: 70px;
+    }
+
+}
+@media(max-width:668px) {
+    .header-row {
+        flex-direction: column;    
+    }
+    .header {
+       padding-bottom: 10px;
+    }
+    .col-xs-12 {
+        margin-bottom: 10px;
+    } 
+    .sm-white-text {
+        font-size: 11px;
+    }
+    .section-1 button {
+        width: 117px;
+        height: 35px;
+        font-size: 14px
+    }
+    .white-text, .black-text {
+        padding: 10px 0px;
+        font-size: 15px;
+    }
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .sm-black-text, .sm-grey-text {
+        font-size: 13px;
+    }
+    .img-social div {   
+        width: 50.96px;
+        height: 50.96px;
+    }
+    .img-social img {
+        padding: 4%;
+    }
+
+}
