@@ -21,14 +21,13 @@ header {
 .menu {
     display: flex;
     justify-content: center; 
-    max-width: 66.66667%;    
-}
-ul {
-    display: flex;
-    justify-content: center; 
+    max-width: 66.66667%;  
     padding: 15px 0px;  
 }
-ul a {
+li {
+    list-style-type: none;
+}
+.menu a {
     display: block;
     color: white;
     text-decoration: none;
@@ -41,10 +40,10 @@ ul a {
     margin:0px 5px;
     padding: 8px 10px;
 }
-ul a:hover {
+.menu a:hover {
     border: #a4a5a8 solid 2px;
 }
-ul a:active {
+.menu a:active {
     border: #23b7a3 solid 2px;
     color: #23b7a3;
 }
@@ -97,11 +96,9 @@ input {
     margin-bottom: 3%;
     color: white;
 }
-.section-1 h1 {
-    padding-left: 0px;
-}
 .white-text-2 {
     padding-left: 25px;
+    padding-top: 40px;   
 }
 .sm-white-text {
     font-size: 16px;
@@ -136,6 +133,7 @@ input {
 .background-white {
     background-color: white;
     border-bottom: #c7c8ca solid 1px;
+    padding: 70px 0px 70px;
 }
 .section-2, .foto, .photo, .work, .features {
     display: flex;
@@ -143,19 +141,17 @@ input {
     align-content: space-between;
     align-items: center;           
 }
-.section-4, .section-5, .work div {
+ .section-5{
     display: flex;
     flex-direction: column;     
-}
-.work div {
-    align-items: center;
 }
 .black-text {
     font-size: 36px;
     font-weight: 900;
     color: #000;
     padding-bottom: 40px;
-    padding-left: 40px;
+    padding-top: 40px;
+    padding-left: 20px;
 }
 .sm-grey-text {
     font-size: 16px;
@@ -177,7 +173,7 @@ input {
    background-color: #a4a5a8;
    margin-right: 1px;
    margin-top: 35px;
-   margin-bottom: 20px;
+   margin-bottom: 60px;
    align-self: flex-start;
 }
 .img-social img {
@@ -186,6 +182,9 @@ input {
 [class*='img-number-'] {
     display: flex;
     margin-bottom: 15px;
+}
+.text-square {
+    padding-top: 165px;
 }
 .square {
     background-color: #23b7a3;
@@ -203,26 +202,27 @@ input {
 .persona {
     margin-bottom: 30px;
 }
-.team {
-    background-color: #d3d9dd;
-    color: black;
+.team {   
+    color: black;    
 }   
 .foto-soc {
-    position: relative;
     display: flex;   
     flex-direction: column;
     align-items: center;
+    background-color: #d3d9dd;
 }
-.name {
+.team .name {
     padding-left: 20px;
+    width: 265px;
+    background-color: #d3d9dd;
 }
-.team:hover {
+.foto-soc:hover {
     background-color: #f5f5f59c;
 }
-.team:hover [class*='soc-'] {
+.foto-soc:hover [class*='soc-'] {
     display: block;
 }
-.team:hover .name {
+.foto-soc:hover .name {
     background-color: #38434a;
     color: white
 }
@@ -241,16 +241,7 @@ input {
     background-repeat: no-repeat;
     background-position: center;    
 }
-.soc-1 {
-    background-image: url('Img/icon (5).png');   
-}
-.soc-2 {
-    background-image: url('Img/icon (6).png');    
-}
-.soc-3 {
-    background-image: url('Img/icon (7).png');
-}
-.sm-black-text-16 {
+s.sm-black-text-16 {
     font-size: 16px;
     font-weight: 600;
     padding: 5px 0px;
@@ -263,29 +254,40 @@ input {
 }
 .background-grey {
     background-color: #38434a;
+    padding: 70px 0px 100px;
 }
-.section-4 img {
+.lovely-work img {
     margin: 15px 0px;
 }
-.section-4 button {
+.lovely-button {
+    display: flex;
+    justify-content: center;
+}
+.lovely-work button {
     width: 150px;
     height: 50px;
     color: white;
     border: white solid 1px;
     border-radius: 10px;
     background-color: transparent;
-    margin: 45px 105px 15px;
-    align-self: center;
+    margin: 45px 105px 25px;
+}
+.lovely-work button:hover {
+    background-color: #23b7a3;
 }
 .work {
     margin: 30px 0px;
 }
 [class*='icon-'] {
     background-color: transparent;
-    width: 68px;
     height: 50px;
     background-repeat: no-repeat;
     margin: 30px 0px;
+    background-position: center;
+}
+.what-do p {
+    display: flex;
+    justify-content: center;
 }
 .icon-1 {
     background-image: url('Img/icon (12).png');
